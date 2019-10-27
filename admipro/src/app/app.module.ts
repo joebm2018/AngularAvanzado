@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //RUTAS
 import { APP_ROUTES } from './app.routes';
+//MODULOS
+import { PagesModule } from './pages/pages.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -15,23 +17,25 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Grafica1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
     RegisterComponent
+    // NopagefoundComponent,
+    // DashboardComponent,
+    // ProgressComponent,
+    // Grafica1Component,
+    // HeaderComponent,
+    // SidebarComponent,
+    // BreadcrumbsComponent,
+    // PagesComponent,
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
 
   ],
   providers: [],

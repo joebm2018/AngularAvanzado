@@ -11,16 +11,17 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 
 
 const appRutas: Routes = [
-    {
-        path: '', 
-        component: PagesComponent,
-        children:[
-            {path: 'dashboard', component: DashboardComponent},
-            {path: 'progress', component: ProgressComponent},
-            {path: 'graficas1', component: Grafica1Component},
-            {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-        ]
-    },
+    // {
+    //     path: '', 
+    //     component: PagesComponent,
+    //     children:[
+    //         {path: 'dashboard', component: DashboardComponent},
+    //         {path: 'progress', component: ProgressComponent},
+    //         {path: 'graficas1', component: Grafica1Component},
+    //         {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+    //     ]
+    // },
+    {path:'', loadChildren:'./pages/pages.module#PagesModule'},
     {path: 'login', component: LoginComponent},
     {path:'register', component: RegisterComponent},
     {path: '**', component: NopagefoundComponent}
