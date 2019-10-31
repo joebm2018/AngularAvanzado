@@ -3,14 +3,16 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-grafico-dona [chartLabels]="graficos.grafico1.labels " [chartData]="graficos.grafico1.data " chartType="doughnut "></app-grafico-dona>
+                <h4 class="card-title">{{graficos.grafico1.leyenda}}</h4>
+                <app-grafico-dona [doughnutChartLabels]="graficos.grafico1.labels" [doughnutChartData]="graficos.grafico1.data"></app-grafico-dona>
             </div>
         </div>
     </div>
     <div class="col-6 ">
         <div class="card ">
             <div class="card-body ">
-                <app-grafico-dona [chartLabels]="graficos.grafico2.labels " [chartData]="graficos.grafico2.data " chartType="doughnut "></app-grafico-dona>
+                <h4 class="card-title">{{graficos.grafico2.leyenda}}</h4>
+                <app-grafico-dona [doughnutChartLabels]="graficos.grafico2.labels" [doughnutChartData]="graficos.grafico2.data"></app-grafico-dona>
             </div>
         </div>
     </div>
@@ -21,14 +23,16 @@
     <div class="col-6 ">
         <div class="card ">
             <div class="card-body ">
-                <app-grafico-dona [chartLabels]="graficos.grafico3.labels " [chartData]="graficos.grafico3.data " chartType="doughnut "></app-grafico-dona>
+                <h4 class="card-title">{{graficos.grafico3.leyenda}}</h4>
+                <app-grafico-dona [doughnutChartLabels]="graficos.grafico3.labels" [doughnutChartData]="graficos.grafico3.data"></app-grafico-dona>
             </div>
         </div>
     </div>
     <div class="col-6 ">
         <div class="card ">
             <div class="card-body ">
-                <app-grafico-dona [chartLabels]="graficos.grafico4.labels " [chartData]="graficos.grafico4.data " chartType="doughnut "></app-grafico-dona>
+                <h4 class="card-title">{{graficos.grafico4.leyenda}}</h4>
+                <app-grafico-dona [doughnutChartLabels]="graficos.grafico4.labels" [doughnutChartData]="graficos.grafico4.data"></app-grafico-dona>
             </div>
         </div>
     </div>
