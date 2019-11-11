@@ -13,6 +13,7 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 import { PAGES_ROUTES } from './pages.route';
 //temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccountSetingsComponent } from './account-setings/account-setings.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         Grafica1Component,
         PagesComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSetingsComponent
     ],
     exports: [
         DashboardComponent,

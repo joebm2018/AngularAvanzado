@@ -10,8 +10,11 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { ServiceModule } from './services/service.module';
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+import { SettingsService } from './services/settings/settings.service';
 
+// SettingsService
 
 @NgModule({
   declarations: [
@@ -24,9 +27,10 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
